@@ -90,8 +90,10 @@
   width: 24px;
   height: 24px;
 }
+
 /* =============== */
 .header__inner {
+  padding: 0px;
   margin-top: 24px;
   background: #fff;
   border-radius: 29px;
@@ -99,7 +101,7 @@
   height: 58px;
   /* border: 1px solid #000; */
 
-  transition: height 0.2s, margin 0.2s, border-radius 0.2s;
+  transition: height 0.2s, margin 0.2s, border-radius 0.2s, padding-top 0.2s;
 }
 
 .header__nav {
@@ -298,12 +300,14 @@
     margin-top: 0px; */
     margin: 0px -20px;
     border-radius: 0;
+    padding-top: 24px;
   }
 
-  .body-menu--opened .header__item--bag{
+  .body-menu--opened .header__item--bag {
     left: 40px;
   }
-  .body-menu--opened .burger-menu{
+
+  .body-menu--opened .burger-menu {
     right: 40px;
   }
 }
