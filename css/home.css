@@ -1,0 +1,592 @@
+.main {}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.hero__bg {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.9);
+}
+
+.hero__inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__title {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+  font-family: "Baskervville", serif;
+  max-width: 768px;
+}
+
+.hero__title span {
+  font-style: italic;
+}
+
+.hero__link {
+  margin-top: 24px;
+  transition: filter 0.2s, transform 0.2s;
+}
+
+/* ====== brands ====== */
+
+.brands {}
+
+.brands__inner {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+}
+
+.brands__title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.brands__logos {
+  display: flex;
+  gap: 80px;
+  min-height: 32px;
+}
+
+.brands__item {}
+
+.brands__logo {
+  height: 100%;
+}
+
+/* ====== featured ====== */
+
+.featured {}
+
+.featured__inner {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.featured__title {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.featured__title span {
+  font-style: italic;
+}
+
+.fragrance__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 32px;
+}
+
+.fragrance__item {
+  max-width: 316px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.fragrance__item--on-sale {
+  position: relative;
+}
+
+.fragrance__item--on-sale::after {
+  content: 'on sale';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 16px;
+  background: #E8A94C;
+  border-radius: 999px;
+}
+
+.fragrance__link {}
+
+.fragrance__link img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.fragrance__name {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 12px;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+
+}
+
+.fragrance__descr {
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.fragrance__price {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.fragrance__btn {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  background: #ABB249;
+  max-width: 316px;
+}
+
+/* ====== about ====== */
+
+.about {}
+
+.about__inner {
+  padding: 80px 0;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.about__img {
+  width: 50%;
+  border-radius: 16px;
+}
+
+.about__text {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 348px;
+}
+
+.about__title {
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Baskervville", serif;
+}
+
+.about__title span {
+  font-style: italic;
+}
+
+.about__description {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.about__btn {
+  background: #ABB249;
+  max-width: none;
+}
+
+/* ====== marquee ====== */
+
+.marquee {
+  background: #E8A94C;
+}
+
+.marquee__inner {
+  display: flex;
+  gap: 40px;
+  padding: 16px 0;
+  width: 100%;
+}
+
+.marquee__element {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.marquee__element img {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+}
+
+.marquee__text {
+  color: #000;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.marquee__text span {
+  font-style: italic;
+}
+
+/* ====== ecology ====== */
+
+.ecology {
+  padding: 80px 0;
+}
+
+.ecology__inner {
+  display: flex;
+  gap: 32px;
+  align-items: end;
+}
+
+.ecology__text-content {}
+
+.ecology__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: "Baskervville", serif;
+  margin-bottom: 40px;
+}
+
+.ecology__title span {
+  font-style: italic;
+}
+
+.ecology__list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 47px 36px;
+}
+
+.ecology__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ecology__icon {
+  /* padding: 10px; */
+  width: 40px;
+  height: 40px;
+  /* background: #E8A94C; */
+  /* border-radius: 100px;
+} */
+}
+
+.ecology__subtitle {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.ecology__text {
+  max-width: 314px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.ecology__img {
+  border-radius: 16px;
+  width: 664px;
+  height: 738px;
+  object-fit: cover;
+}
+
+/* ====== reviews ====== */
+
+.reviews {
+  padding: 80px 0;
+}
+
+.reviews .swiper {
+  overflow: visible;
+}
+
+.reviews__inner {}
+
+.reviews__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Baskervville", serif;
+  margin-bottom: 40px;
+}
+
+.reviews__title span {
+  font-style: italic;
+}
+
+.reviews__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__slide {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 40px 40px 24px;
+  max-width: 432px;
+}
+
+.slide__stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  user-select: none;
+}
+
+.slide__stars img {
+  width: 24px;
+  height: 24px;
+}
+
+.slide__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.slide__author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.author__pfp {
+  width: 48px;
+  height: 48px;
+  user-select: none;
+}
+
+.author__text-content {}
+
+.author__name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: "Baskervville", serif;
+}
+
+.author__location {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.reviews__btn {
+  background: #fff;
+  border-radius: 100px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+
+.reviews__btns {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.reviews__btns .reviews__btn-prev {
+  transform: rotate(180deg);
+}
+
+/* ====== footer ====== */
+
+.footer {}
+
+.footer__inner {
+  background: #DD6249;
+  padding: 80px 40px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+.footer__content {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.footer__form-wrapper {
+  flex-grow: 1;
+}
+
+.footer__flower-icon {
+  width: 44px;
+  height: 44px;
+  color: white;
+}
+
+.footer__form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  font-family: "Baskervville", serif;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.footer__title span {
+  font-style: italic;
+}
+
+.footer__input-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.footer__form input {
+  padding: 8px 16px;
+  width: 100%;
+  max-width: 366px;
+  border-radius: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
+}
+
+.footer__form input::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.footer__form button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+
+  max-width: 115px;
+}
+
+
+.footer__nav {
+  display: flex;
+  gap: 32px;
+}
+
+.footer__nav-col {
+  min-width: 127px;
+}
+
+.footer__nav-col:last-child {
+  min-width: 158px;
+}
+
+.footer__nav-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: "Baskervville", serif;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.footer__list {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+}
+
+.footer__list-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.footer__logo {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+.footer__author {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+/* ================================================= */
+/* ================================================= */
+/* ================================================= */
+/* ================================================= */
+/* ================================================= */
+
+
+@media (min-width: 900px) {
+
+}
+@media (max-width: 1000px) {}
