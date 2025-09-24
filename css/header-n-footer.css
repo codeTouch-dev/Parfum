@@ -121,7 +121,7 @@
   /* border: 1px solid #0f0; */
 
   position: relative;
-  transition: height 0.2s;
+  /* transition: height 0.2s; */
 }
 
 .header__item {
@@ -264,6 +264,10 @@
     padding: 0px 40px;
   }
 
+  .header__link{
+    font-size: 20px;
+  }
+
   .header__item--bag {
     left: 20px;
   }
@@ -273,6 +277,7 @@
   }
 
   .header__item--1 {
+    padding-top: 20vh;
     order: 2;
     display: flex;
     flex-direction: column;
@@ -293,11 +298,7 @@
   }
 
   .body-menu--opened .header__inner {
-    /* height: calc(100vh - 88px); */
     height: 100vh;
-    /* margin-right: -20px;
-    margin-left: -20px;
-    margin-top: 0px; */
     margin: 0px -20px;
     border-radius: 0;
     padding-top: 24px;
