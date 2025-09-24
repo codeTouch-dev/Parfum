@@ -313,4 +313,21 @@
   }
 }
 
-@media (max-width: 430px) {}
+@media (max-width: 650px) {
+  .header__inner {
+    margin: 10px -10px 0;
+  }
+    .body-menu--opened .header__inner {
+    height: 100vh;
+    margin: 0px -20px;
+    border-radius: 0;
+    padding-top: 10px;
+  }
+    .body-menu--opened .header__item--bag {
+    left: 30px;
+  }
+
+  .body-menu--opened .burger-menu {
+    right: 30px;
+  }
+}
