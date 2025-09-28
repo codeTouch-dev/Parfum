@@ -587,3 +587,19 @@
 
 }
 @media (max-width: 1200px) {}
+
+@media (max-width: 800px) {
+  .hero__title{
+    font-size: 50px;
+
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+    .hero__title{
+    font-size: 30px;
+
+    max-width: 350px;
+  }
+}
