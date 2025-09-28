@@ -323,9 +323,14 @@
 }
 
 @media (max-width: 650px) {
-  .header__inner {
-    margin: 10px -10px 0;
+  .page-container {
+    padding: 0px 10px;
   }
+
+  .header__inner {
+    margin: 10px 0px 0px;
+  }
+  
     .body-menu--opened .header__inner {
     height: 100vh;
     margin: 0px -20px;
