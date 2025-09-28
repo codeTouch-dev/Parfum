@@ -209,6 +209,7 @@
     border-radius: 5px;
     background: #000;
     position: relative;
+
     transition: background 0.2s, transform 0.2s;
   }
 
@@ -221,7 +222,8 @@
     height: 2px;
     border-radius: 5px;
     background: #000;
-    transition: background 0.2s, transform 0.2s;
+
+    transition: background 0.2s, transform 0.2s, top 0.2s 0.2s;
   }
 
   .burger-menu span::after {
@@ -233,7 +235,8 @@
     height: 2px;
     border-radius: 5px;
     background: #000;
-    transition: background 0.2s, transform 0.2s;
+
+    transition: background 0.2s, transform 0.2s, top 0.2s 0.2s;
   }
 
   .burger-menu--opened span {
@@ -243,11 +246,17 @@
   .burger-menu--opened span::before {
     transform: rotateZ(45deg);
     top: 0;
+
+    transition: background 0.2s, transform 0.2s 0.2s, top 0.2s;
+
   }
 
   .burger-menu--opened span::after {
     transform: rotateZ(-45deg);
     top: 0;
+
+    transition: background 0.2s, transform 0.2s 0.2s, top 0.2s;
+
   }
 
   body.body-menu--opened {
