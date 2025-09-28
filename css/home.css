@@ -71,12 +71,14 @@
   justify-content: center;
   gap: 80px;
   min-height: 32px;
+  width: 100%;
 }
 
 .brands__item {}
 
 .brands__logo {
   height: 100%;
+  width: 100%;
 }
 
 /* ====== featured ====== */
@@ -583,23 +585,41 @@
 /* ================================================= */
 
 
-@media (min-width: 900px) {
+@media (min-width: 900px) {}
 
+@media (max-width: 1200px) {
+  .brands__logos {
+    gap: 4vw;
+  }
 }
-@media (max-width: 1200px) {}
 
 @media (max-width: 800px) {
-  .hero__title{
+  .hero__title {
     font-size: 50px;
-
     max-width: 450px;
+  }
+  .featured__inner{
+    align-items: center;
+  }
+  .featured__title{
+    align-self: start;
+  }
+  .fragrance__list{
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 500px) {
-    .hero__title{
+  .hero__title {
     font-size: 40px;
 
     max-width: 350px;
+  }
+  .brands__inner{
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .featured__inner{
+    margin-top: 40px;
   }
 }
