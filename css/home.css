@@ -374,6 +374,11 @@
   border-radius: 16px;
   padding: 40px 40px 24px;
   max-width: 432px;
+  position: relative;
+
+  min-height: 266px;
+  height: 100%;
+  /* max-height: 266px; */
 }
 
 .slide__stars {
@@ -393,9 +398,37 @@
   font-size: 16px;
   line-height: 1.4;
   margin-bottom: 24px;
+
+  overflow: hidden;
+  max-height: 90px;
+
+  transition: max-height 0.2s;
+}
+.slide__text.expanded {
+  max-height: 500px;
+}
+
+.slide__more {
+  cursor: pointer;
+  text-decoration: underline;
+  padding-bottom: 10px;
+  position: absolute;
+  bottom: 66px;
+  left: 40px;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.slide__more--visible{
+  opacity: 1;
+  visibility: visible;
+
+  transition: opacity 0.2s, visibility 0.2s 0.2s;
 }
 
 .slide__author {
+  margin-top: auto;
   display: flex;
   gap: 12px;
   align-items: center;
@@ -524,10 +557,8 @@
   font-size: 12px;
   line-height: 1.4;
   letter-spacing: 0.1em;
-
   max-width: 115px;
 }
-
 
 .footer__nav {
   display: flex;
@@ -606,6 +637,10 @@
   .ecology__img {
     display: none;
   }
+
+  .reviews__slide {
+    max-width: none;
+  }
 }
 
 @media (max-width: 800px) {
@@ -666,11 +701,13 @@
     grid-template-columns: auto;
   }
 
-  .ecology__item {}
-
   .ecology__text {
     max-width: 80vw;
     max-width: none;
+  }
+
+  .reviews {
+    padding: 0 0 40px;
   }
 
 }
