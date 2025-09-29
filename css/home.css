@@ -404,6 +404,7 @@
 
   transition: max-height 0.2s;
 }
+
 .slide__text.expanded {
   max-height: 500px;
 }
@@ -420,7 +421,8 @@
 
   transition: opacity 0.2s, visibility 0.2s;
 }
-.slide__more--visible{
+
+.slide__more--visible {
   opacity: 1;
   visibility: visible;
 
@@ -486,7 +488,7 @@
 
 /* ====== footer ====== */
 
-.footer {}
+/* .footer {}
 
 .footer__inner {
   background: #DD6249;
@@ -609,7 +611,7 @@
   font-size: 16px;
   line-height: 1.4;
   color: #fff;
-}
+} */
 
 /* ================================================= */
 /* ================================================= */
@@ -641,6 +643,19 @@
   .reviews__slide {
     max-width: none;
   }
+
+  /* .footer__content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer__form input {
+    max-width: none;
+  }
+
+  .footer__nav-col:last-child {
+    min-width: unset;
+  } */
 }
 
 @media (max-width: 800px) {
@@ -668,6 +683,11 @@
   .about__img {
     display: none;
   }
+
+
+
+
+
 }
 
 @media (max-width: 500px) {
