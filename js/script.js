@@ -17,17 +17,6 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
-const header = document.querySelector('.header')
-
-document.addEventListener('click', (event) => {
-  console.log(event.target);
-  if (event.target.parentElement.classList.contains('header__notification-close-btn')) {
-    header.classList.add('header--notification-hidden')
-  } else {
-    console.log(event.target);
-  }
-})
-
 document.querySelectorAll('.reviews__slide').forEach(slide => {
   const text = slide.querySelector('.slide__text');
   const btn = slide.querySelector('.slide__more');
