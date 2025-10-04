@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/header-n-footer.css">
-  <link rel="stylesheet" href="../css/shop.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/header-n-footer.css">
+  <link rel="stylesheet" href="/css/products.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PARFUM | Shop</title>
+  <title>PARFUM | Citrus</title>
 </head>
 
 <body class="body">
@@ -21,7 +21,7 @@
             <a href="#" class="header__notification-link"> Just Restocked | Shop Our Fragrance
               Collection</a>
             <span class="header__notification-close-btn">
-              <img src="../img/icons/cross.svg" alt="">
+              <img src="/img/icons/cross.svg" alt="">
             </span>
           </div>
         </div>
@@ -35,8 +35,8 @@
                 <a href="#" class="header__link">ABOUT</a>
               </li>
               <li class="header__item header__item--logo">
-                <a href="../index.html" class="header__link header__link--svg">
-                  <img src="../img/icons/logo.svg" alt="" class="header__logo">
+                <a href="/index.html" class="header__link header__link--svg">
+                  <img src="/img/icons/logo.svg" alt="" class="header__logo">
                 </a>
               </li>
               <li class="header__item header__item--2">
@@ -45,7 +45,7 @@
               </li>
               <li class="header__item header__item--bag">
                 <a href="#" class="header__link header__link--svg">
-                  <img src="../img/icons/bag.svg" alt="" class="header__icon">
+                  <img src="/img/icons/bag.svg" alt="" class="header__icon">
                 </a>
               </li>
             </ul>
@@ -59,30 +59,98 @@
 
     <main class="main">
 
-      <section class="hero">
-        <img src="../img/hero-bg-shop.webp" alt="background picture with flowers" class="hero__bg">
-        <h1 class="hero__title">
-          All <span>fragrances</span>.
-        </h1>
+      <section class="product">
+        <div class="page-container">
+          <div class="product__inner">
+            <div class="product__img">
+              <img src="/img/citrus.webp" alt="Citrus parfum">
+            </div>
+            <div class="product__info">
+              <h1 class="product__title">Citrus</h1>
+              <div class="product__description">
+                <span>tangy</span>
+                <span class="product__price">$44.99</span>
+              </div>
+              <div class="product__scent">Captures the essence of a carefree breeze through wildflower fields, evoking
+                pure joy with its light and refreshing notes.</div>
+              <div class="product__stock product__stock--sold-out">sold out!</div>
+              <div class="product__qty">qty
+                <input type="number" min="1" value="1">
+              </div>
+              <button class="product__btn btn">ADD TO CART</button>
+              <div class="product__dropdown">
+                <div class="product__dropdown-header">
+                  <span>scent notes</span>
+                  <div class="product__dropdown-btn"><img src="/img/icons/plus.svg" alt=""></div>
+                </div>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, sapiente impedit! Expedita
+                  officia facere iure. Repudiandae deleniti iusto error est quo, soluta enim, placeat eos maiores
+                  perferendis distinctio aliquid? Aspernatur?</span>
+              </div>
+
+              <div class="product__dropdown">
+                <div class="product__dropdown-header">
+                  <span>ingredients</span>
+                  <div class="product__dropdown-btn"><img src="/img/icons/plus.svg" alt=""></div>
+                </div>
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, at omnis culpa aspernatur
+                  perspiciatis maiores aliquam blanditiis perferendis libero commodi veritatis architecto delectus
+                  mollitia ducimus ipsum suscipit recusandae dignissimos consequuntur.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="page-container">
+          <h2 class="about__title">Unveiling creative <span>mastery</span>.</h2>
+          <ul class="about__list">
+            <li class="about__item">
+              <img src="/img/icons/tube.svg" alt="" class="about__icon">
+              <h3 class="about__subtitle">Artisanal Craftsmanship</h3>
+              <p class="about__text">Our fragrances are meticulously crafted by skilled artisans who blend science with
+                creativity. Every note is carefully chosen and combined, resulting in captivating scents.</p>
+            </li>
+            <li class="about__item">
+              <img src="/img/icons/flower-in-circle.svg" alt="" class="about__icon">
+              <h3 class="about__subtitle">Scent Journey Innovation</h3>
+              <p class="about__text">Our fragrances take you on a dynamic scent journey. As the day unfolds, our
+                perfumes reveal different facets, adapting to your body chemistry and surroundings.</p>
+            </li>
+            <li class="about__item">
+              <img src="/img/icons/leaf.svg" alt="" class="about__icon">
+              <h3 class="about__subtitle">Inspired by Nature</h3>
+              <p class="about__text">Our fragrances are born from nature's palette, capturing the essence of blooming
+                flowers, lush landscapes, and serene moments. We draw inspiration from the beauty around us.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="ingridients">
+        <div class="page-container">
+
+          <div class="ingridients__inner">
+            <div class="ingridients__text-content">
+              <h2 class="ingridients__title">Nature as the <span>muse</span>.</h2>
+              <p class="ingridients__text">The sweet blush of blooming petals, the woody embrace of a forest, the crisp
+                freshness of morning dew – these elements find their way into our fragrances, infusing them with life
+                and authenticity. Our artisans capture these fleeting moments, distilling them into scents that
+                encapsulate the beauty of the natural world.</p>
+            </div>
+            <img src="/img/flower-in-jar-productpage.webp" alt="" class="ingridients__img">
+          </div>
+        </div>
       </section>
 
       <section class="fragrance">
         <div class="page-container">
+          <h2 class="fragrance__title">We know you’ll <span>love</span> these.</h2>
           <ul class="fragrance__list">
-
-            <li class="fragrance__item fragrance__item--on-sale">
-              <a href="#" class="fragrance__link">
-                <img src="../img/meadow.webp" alt="meadow fragrance">
-              </a>
-              <h4 class="fragrance__name">Meadow</h4>
-              <div class="fragrance__descr">BREEZY & JOYFUL</div>
-              <div class="fragrance__price">$39.95</div>
-              <a href="" class="btn fragrance__btn">SHOP NOW</a>
-            </li>
-
             <li class="fragrance__item">
               <a href="#" class="fragrance__link">
-                <img src="../img/jardinea.webp" alt="meadow fragrance">
+                <img src="/img/jardinea.webp" alt="meadow fragrance">
               </a>
               <h4 class="fragrance__name">Jardinea</h4>
               <div class="fragrance__descr">STRONGLY FLORAL</div>
@@ -91,7 +159,7 @@
             </li>
             <li class="fragrance__item fragrance__item--on-sale">
               <a href="#" class="fragrance__link">
-                <img src="../img/lavanda.webp" alt="meadow fragrance">
+                <img src="/img/lavanda.webp" alt="meadow fragrance">
               </a>
               <h4 class="fragrance__name">Lavanda</h4>
               <div class="fragrance__descr">CALMING</div>
@@ -100,7 +168,7 @@
             </li>
             <li class="fragrance__item">
               <a href="#" class="fragrance__link">
-                <img src="../img/neroli.webp" alt="meadow fragrance">
+                <img src="/img/neroli.webp" alt="meadow fragrance">
               </a>
               <h4 class="fragrance__name">Neroli</h4>
               <div class="fragrance__descr">DEEP & SWEET</div>
@@ -109,28 +177,10 @@
             </li>
             <li class="fragrance__item">
               <a href="#" class="fragrance__link">
-                <img src="../img/spritz.webp" alt="meadow fragrance">
+                <img src="/img/spritz.webp" alt="meadow fragrance">
               </a>
               <h4 class="fragrance__name">Spritz</h4>
               <div class="fragrance__descr">FRUITY & LIGHT</div>
-              <div class="fragrance__price">$39.95</div>
-              <a href="" class="btn fragrance__btn">SHOP NOW</a>
-            </li>
-            <li class="fragrance__item">
-              <a href="#" class="fragrance__link">
-                <img src="../img/powder.webp" alt="meadow fragrance">
-              </a>
-              <h4 class="fragrance__name">Powder</h4>
-              <div class="fragrance__descr">ultra clean</div>
-              <div class="fragrance__price">$39.95</div>
-              <a href="" class="btn fragrance__btn">SHOP NOW</a>
-            </li>
-            <li class="fragrance__item">
-              <a href="products/citrus.html" class="fragrance__link">
-                <img src="../img/citrus.webp" alt="meadow fragrance">
-              </a>
-              <h4 class="fragrance__name">Citrus</h4>
-              <div class="fragrance__descr">tangy</div>
               <div class="fragrance__price">$39.95</div>
               <a href="" class="btn fragrance__btn">SHOP NOW</a>
             </li>
@@ -271,9 +321,9 @@
 
   </div>
 
-  <script src="../js/burger-menu.js"></script>
-  <script src="../js/header-notification.js"></script>
-  <script src="../js/shop.js"></script>
+  <script src="/js/burger-menu.js"></script>
+  <script src="/js/header-notification.js"></script>
+  <script src="/js/products.js"></script>
 
 </body>
 

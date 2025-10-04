@@ -1,0 +1,402 @@
+/* =============== product =============== */
+
+.product {
+  padding-top: 204px;
+  padding-bottom: 80px;
+}
+
+.product__inner {
+  display: flex;
+  gap: 32px;
+}
+
+.product__img {
+  width: 50%;
+}
+
+.product__img img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.product__info {
+  width: 50%;
+  padding: 0 148px;
+}
+
+.product__title {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1;
+  font-family: "Baskervville", serif;
+  margin-bottom: 12px;
+}
+
+.product__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.product__description span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+span.product__price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.product__scent {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+.product__stock {
+  position: relative;
+  padding: 8px 16px 8px 16px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  width: fit-content
+}
+
+.product__stock::before {
+  content: '';
+  margin-right: 8px;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background: #000;
+}
+
+.product__stock.product__stock--sold-out {
+  border: 1px solid #DD6249;
+  color: #DD6249;
+}
+
+.product__stock.product__stock--sold-out::before {
+  background: #DD6249;
+}
+
+.product__qty {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-right: 8px;
+  margin-bottom: 32px;
+}
+
+.product__qty input {
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 32px;
+  padding: 9px 13px;
+  max-width: 63px;
+}
+
+.product__btn {
+  max-width: 368px;
+  background: #ABB249;
+  margin-bottom: 32px;
+}
+
+.product__dropdown {
+  background: #fff;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  max-height: 56px;
+
+  transition: max-height 0.2s;
+}
+
+.product__dropdown:last-child {
+  margin-bottom: 0;
+}
+
+.product__dropdown--opened {
+  max-height: 1000px;
+}
+
+.product__dropdown--opened .product__dropdown-btn {
+  transform: rotate(45deg);
+}
+
+.product__dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.product__dropdown-btn {
+  background: #FFF0F7;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transform: rotate(0deg);
+
+  transition: transform 0.2s;
+}
+
+/* =============== about =============== */
+
+.about {
+  padding: 80px 0;
+}
+
+.about__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Baskervville", serif;
+  margin-bottom: 40px;
+
+}
+
+.about__title span {
+  font-style: italic;
+}
+
+.about__list {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.about__icon {
+  height: 40px;
+  width: 40px;
+}
+
+.about__subtitle {
+  max-width: 352px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about__text {
+  max-width: 352px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* =============== ingridients =============== */
+
+.ingridients {
+  padding: 80px 0;
+  position: relative;
+}
+
+.ingridients__inner {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.ingridients__text-content {
+  width: 50%;
+}
+
+.ingridients__title {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ingridients__title span {
+  font-style: italic;
+}
+
+.ingridients__text {
+  margin: 0 auto;
+  max-width: 368px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.ingridients__img {
+  width: 50%;
+  max-width: 664px;
+  height: 738px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* ================== fragrance ================== */
+
+.fragrance {
+  margin: 80px 0;
+}
+.fragrance__title {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.fragrance__title span {
+  font-style: italic;
+}
+.fragrance__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 32px;
+}
+
+.fragrance__item {
+  max-width: 316px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.fragrance__item--on-sale {
+  position: relative;
+}
+
+.fragrance__item--on-sale::after {
+  content: 'on sale';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 16px;
+  background: #E8A94C;
+  border-radius: 999px;
+}
+
+.fragrance__link {
+  transition: filter 0.2s;
+}
+
+.fragrance__link img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.fragrance__name {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 12px;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+
+}
+
+.fragrance__descr {
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.fragrance__price {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.fragrance__btn {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  background: #ABB249;
+  max-width: 316px;
+}
+
+/* ============================ */
+
+@media (min-width: 900px) {
+  .fragrance__link:hover{
+    filter: brightness(0.9);
+  }
+}
+
+@media (max-width: 800px) {
+  .hero__title {
+    font-size: 50px;
+    max-width: 450px;
+  }
+
+  .fragrance__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 500px) {
+  .hero {
+    height: 280px;
+  }
+
+  .hero__title {
+    font-size: 40px;
+    max-width: 350px;
+  }
+}
