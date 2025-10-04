@@ -24,6 +24,7 @@
 }
 
 .hero__content {
+  padding-top: 40px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -132,12 +133,15 @@
   object-fit: cover;
   height: 100%;
 }
-.banner__text-content{
+
+.banner__text-content {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 28px;
 }
+
 .banner__title {
   font-family: "Baskervville", serif;
   font-weight: 400;
@@ -147,7 +151,8 @@
   color: #fff;
   max-width: 768px;
 }
-.banner__title span{
+
+.banner__title span {
   font-style: italic;
 }
 
@@ -156,18 +161,21 @@
 .questions {
   margin-bottom: 80px;
 }
+
 .questions__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .questions__title {
   font-family: "Baskervville", serif;
-font-weight: 400;
-font-size: 40px;
-line-height: 1.2;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
   max-width: 768px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .questions__list {
@@ -227,4 +235,40 @@ line-height: 1.2;
   transform: rotate(0deg);
 
   transition: transform 0.2s;
+}
+
+/* ====================== */
+/* ====================== */
+/* ====================== */
+
+
+@media (max-width: 700px) {
+  .about__list {
+    flex-direction: column;
+  }
+
+  .about__title {
+    margin-bottom: 40px;
+  }
+
+  .banner__title{
+    font-size: 55px;
+  }
+}
+@media (max-width: 500px) {
+.hero__title{
+  font-size: 50px;
+}
+.about__title{
+  font-size: 30px;
+}
+.about__percent{
+  font-size: 50px;
+}
+.banner__title{
+  font-size: 40px;
+}
+.questions__title{
+  font-size: 30px;
+}
 }

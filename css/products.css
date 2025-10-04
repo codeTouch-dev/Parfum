@@ -164,8 +164,8 @@ span.product__price {
 }
 
 .product__dropdown-btn {
-  background: #FFF0F7;
   user-select: none;
+  background: #FFF0F7;
   cursor: pointer;
   padding: 6px;
   border-radius: 100px;
